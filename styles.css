@@ -1,83 +1,100 @@
 body {
-  background: #f9f6f2;
-  color: #7a7a7a;
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
 }
-nav {
-  background: #d7b97e;
-  padding: 1em 2em;
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 2em 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .logo {
+.nav-logo {
   font-size: 2em;
-  color: #7a7a7a;
+  color: #222;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 2em;
   margin: 0;
   padding: 0;
 }
-nav ul li a {
+.nav-links li a {
   text-decoration: none;
-  color: #7a7a7a;
-  font-weight: 600;
+  color: #222;
+  font-weight: 500;
   font-size: 1.1em;
   transition: color 0.2s;
 }
-nav ul li a:hover {
-  color: #f7e1e3;
+.nav-links li a:hover {
+  color: #A88E5C; /* subtle gold accent */
 }
-.header {
-  background: linear-gradient(90deg, #f7e1e3 0%, #f9f6f2 100%);
+.hero {
   text-align: center;
-  padding: 3em 1em 2em 1em;
+  padding: 5em 1em 2em 1em;
+  background: #fff;
 }
-.header h1 {
-  font-size: 2.5em;
-  color: #d7b97e;
+.hero h1 {
+  font-size: 2.8em;
+  font-weight: 700;
   margin-bottom: 0.5em;
+  color: #222;
 }
-.header p {
-  font-size: 1.3em;
-  color: #7a7a7a;
-  margin-bottom: 1em;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  color: #444;
 }
-.cta-btn {
-  background: #d7b97e;
-  color: white;
-  padding: 0.8em 2em;
+.btn-primary {
+  background: #A88E5C;
+  color: #fff;
+  padding: 1em 2.5em;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 1.1em;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   cursor: pointer;
   text-decoration: none;
   transition: background 0.2s;
+  display: inline-block;
 }
-.cta-btn:hover {
-  background: #f7e1e3;
-  color: #d7b97e;
+.btn-primary:hover {
+  background: #222;
+  color: #fff;
 }
-.mission {
-  background: #fff;
-  padding: 2em 1em;
+.mission,
+.about-section,
+.partners-section,
+.courses-section {
+  background: #f9f9f9;
+  padding: 2em 1em 3em 1em;
   text-align: center;
+  max-width: 800px;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(168,142,92,0.06);
 }
-.mission h2 {
-  color: #d7b97e;
+.mission h2,
+.about-section h1,
+.partners-section h1,
+.courses-section h1 {
+  color: #A88E5C;
   font-size: 2em;
   margin-bottom: 0.5em;
 }
-.mission p {
+.mission p,
+.about-section p,
+.partners-section p,
+.courses-section p {
   font-size: 1.1em;
+  color: #444;
 }
 .shop-section {
   padding: 2em 1em;
@@ -86,15 +103,16 @@ nav ul li a:hover {
 }
 .shop-section h1 {
   text-align: center;
-  color: #d7b97e;
+  color: #A88E5C;
   margin-bottom: 1.5em;
 }
 .product-category {
   margin-bottom: 2em;
 }
 .product-category h2 {
-  color: #d7b97e;
-  border-bottom: 2px solid #f7e1e3;
+  color: #A88E5C;
+  font-size: 1.3em;
+  border-bottom: 1px solid #eee;
   display: inline-block;
   margin-bottom: 1em;
   padding-bottom: 0.3em;
@@ -108,33 +126,52 @@ nav ul li a:hover {
 .product-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(215,185,126,0.10);
+  box-shadow: 0 2px 10px rgba(168,142,92,0.09);
   padding: 1.2em;
   width: 220px;
   text-align: center;
+  transition: box-shadow 0.2s;
+}
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(168,142,92,0.13);
 }
 .product-card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  background: #f7e1e3;
+  background: #eee;
   margin-bottom: 0.7em;
 }
 .product-card h3 {
-  color: #7a7a7a;
+  color: #222;
   margin: 0.5em 0 0.3em 0;
   font-size: 1.1em;
 }
 .product-card .price {
-  color: #d7b97e;
+  color: #A88E5C;
   font-weight: bold;
   font-size: 1.1em;
+  margin-bottom: 0.6em;
 }
-footer {
-  background: #d7b97e;
-  color: #fff;
+.partners-section ul,
+.courses-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+.partners-section ul li,
+.courses-section ul li {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+.footer {
+  background: #fff;
+  color: #A88E5C;
   text-align: center;
   padding: 1em 0;
   margin-top: 2em;
+  font-size: 0.95em;
+  border-top: 1px solid #eee;
 }
