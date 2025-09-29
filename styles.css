@@ -1,0 +1,140 @@
+body {
+  background: #f9f6f2;
+  color: #7a7a7a;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+nav {
+  background: #d7b97e;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 2em;
+  color: #7a7a7a;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #f7e1e3;
+}
+.header {
+  background: linear-gradient(90deg, #f7e1e3 0%, #f9f6f2 100%);
+  text-align: center;
+  padding: 3em 1em 2em 1em;
+}
+.header h1 {
+  font-size: 2.5em;
+  color: #d7b97e;
+  margin-bottom: 0.5em;
+}
+.header p {
+  font-size: 1.3em;
+  color: #7a7a7a;
+  margin-bottom: 1em;
+}
+.cta-btn {
+  background: #d7b97e;
+  color: white;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #f7e1e3;
+  color: #d7b97e;
+}
+.mission {
+  background: #fff;
+  padding: 2em 1em;
+  text-align: center;
+}
+.mission h2 {
+  color: #d7b97e;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.mission p {
+  font-size: 1.1em;
+}
+.shop-section {
+  padding: 2em 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+.shop-section h1 {
+  text-align: center;
+  color: #d7b97e;
+  margin-bottom: 1.5em;
+}
+.product-category {
+  margin-bottom: 2em;
+}
+.product-category h2 {
+  color: #d7b97e;
+  border-bottom: 2px solid #f7e1e3;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(215,185,126,0.10);
+  padding: 1.2em;
+  width: 220px;
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f7e1e3;
+  margin-bottom: 0.7em;
+}
+.product-card h3 {
+  color: #7a7a7a;
+  margin: 0.5em 0 0.3em 0;
+  font-size: 1.1em;
+}
+.product-card .price {
+  color: #d7b97e;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+footer {
+  background: #d7b97e;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
